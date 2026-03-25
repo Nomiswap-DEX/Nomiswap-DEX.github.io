@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /nomiswap/
+Sitemap: https://nomi-swap.github.io/sitemap.xml
