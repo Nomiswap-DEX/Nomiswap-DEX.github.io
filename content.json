@@ -1,0 +1,97 @@
+{
+  "key_facts": {
+    "Category": "Decentralized exchange",
+    "Network": "BNB Smart Chain",
+    "Token": "NMX",
+    "Custody": "Non-custodial AMM smart contracts",
+    "Model": "AMM with referral and staking features"
+  },
+  "intent": [
+    {
+      "q": "Nomiswap DEX fees and NMX rewards",
+      "a": "Nomiswap is a BNB Smart Chain decentralized exchange with AMM swaps, NMX token mechanics, staking, farming, and a referral-oriented growth model. DeFiLlama describes it as a DEX platform with a binary referral system and low platform transaction fees. Users searching fees should separate swap fees, liquidity-provider economics, price impact, gas fees on BSC, and any NMX reward or cashback mechanics shown in the app. The final swap quote is more important than a marketing fee headline because output depends on pool liquidity and trade size. For current protocol status, use the official app and <a href=\"https://defillama.com/protocol/nomiswap\">Nomiswap on DeFiLlama</a>."
+    },
+    {
+      "q": "Nomiswap vs PancakeSwap on BNB Chain",
+      "a": "Nomiswap and PancakeSwap both serve BNB Chain swap intent, but they differ in scale and positioning. PancakeSwap is the dominant BNB Chain AMM by liquidity, integrations, and brand recognition. Nomiswap is smaller and more specialized around NMX rewards, referral mechanics, and low-fee DEX positioning. For a trader, the best venue is whichever gives the better net output after price impact and gas. For a liquidity provider, the question is pool depth, reward token sustainability, volume, and smart contract risk. In most searches, Nomiswap is a niche alternative rather than a full replacement for PancakeSwap."
+    },
+    {
+      "q": "Nomiswap supported chain and tokens",
+      "a": "Nomiswap's core tracked activity is on BNB Smart Chain, where users trade BEP-20 assets through AMM pools. NMX is the protocol token associated with the exchange, while BNB is commonly needed for gas. Supported tokens are determined by app listings, pool creation, liquidity depth, and token contract verification. As with any BSC DEX, users should verify token contracts before swapping because fake tokens can share the same ticker and logo. A low-liquidity token may technically be swappable but still produce poor execution due to slippage and price impact."
+    },
+    {
+      "q": "Nomiswap staking, farming, and referral program",
+      "a": "Nomiswap-related search demand often includes staking NMX, farming LP tokens, and referral levels. These features can increase apparent returns, but they also add token-price, emissions, lockup, and smart contract risk. A user should distinguish single-token staking from LP farming, because LP positions can lose value relative to holding the two assets separately. Referral rewards are not the same as trading yield; they depend on user activity and program rules. For any advertised APR, check whether it is paid in NMX, whether rewards are boosted by referrals, and whether the pool has enough volume to justify the risk."
+    }
+  ],
+  "compare": {
+    "title": "Nomiswap vs PancakeSwap",
+    "rows": [
+      ["Dimension", "Nomiswap", "PancakeSwap"],
+      ["Network focus", "BNB Smart Chain", "BNB Chain and multiple chains"],
+      ["Token", "NMX", "CAKE"],
+      ["Positioning", "Low-fee DEX with referral and rewards mechanics", "Largest BNB Chain AMM ecosystem"],
+      ["Liquidity profile", "Smaller, niche pools", "Much deeper liquidity across major pairs"],
+      ["Best fit", "NMX users and reward-focused LPs", "Mainstream BNB Chain swaps and large trades"]
+    ]
+  },
+  "faq": [
+    {
+      "q": "What chain is Nomiswap on?",
+      "a": "Nomiswap is primarily tracked on BNB Smart Chain. Users need BNB for gas and should verify that the token they are swapping is the correct BEP-20 contract. The protocol's DeFiLlama listing reports Nomiswap activity on BSC."
+    },
+    {
+      "q": "What is the NMX token?",
+      "a": "NMX is Nomiswap's protocol token. It is used around Nomiswap's rewards, staking, and ecosystem mechanics. Like other DEX reward tokens, its value and yield impact can change with emissions, market demand, and liquidity conditions."
+    },
+    {
+      "q": "Is Nomiswap bigger than PancakeSwap?",
+      "a": "No. PancakeSwap is much larger by BNB Chain liquidity and integrations. Nomiswap is a smaller DEX with its own referral and NMX reward design. Traders should compare live route output, while LPs should compare pool depth, volume, rewards, and risk."
+    },
+    {
+      "q": "Can I farm on Nomiswap?",
+      "a": "Nomiswap has offered farming and staking-style features tied to liquidity positions and NMX rewards. Farming generally requires depositing LP tokens, which exposes users to impermanent loss as well as reward-token volatility. Always check current pool rules in the official app before depositing."
+    },
+    {
+      "q": "Why is my Nomiswap swap showing high slippage?",
+      "a": "High slippage usually means the pool is shallow for the trade size, the token is volatile, or the route has poor liquidity. Reducing trade size, choosing a deeper pair, or comparing PancakeSwap and aggregators may improve execution. Never raise slippage to force a trade unless the token risk is understood."
+    },
+    {
+      "q": "Where can I track Nomiswap TVL?",
+      "a": "Nomiswap TVL and protocol information can be checked on DeFiLlama. The listing shows current TVL, BSC chain data, staked value, category, and competitors. For actual trading and pool details, users still need the official Nomiswap app."
+    }
+  ],
+  "niche": {
+    "type": "swap",
+    "asset": "BNB",
+    "receive": "NMX",
+    "supported_networks": ["BNB Smart Chain"]
+  },
+  "authority": [
+    {
+      "text": "Nomiswap official website",
+      "url": "https://nomiswap.io/"
+    },
+    {
+      "text": "Nomiswap protocol data on DeFiLlama",
+      "url": "https://defillama.com/protocol/nomiswap"
+    },
+    {
+      "text": "NMX token on BscScan",
+      "url": "https://bscscan.com/token/0xd32d01a43c869edcd1117c640fbdcfcfd97d9d65"
+    },
+    {
+      "text": "Nominex GitHub with Nomiswap contracts",
+      "url": "https://github.com/nominex"
+    },
+    {
+      "text": "NMX token on CoinGecko",
+      "url": "https://www.coingecko.com/en/coins/nominex"
+    }
+  ],
+  "sameAs": [
+    "https://twitter.com/NominexExchange",
+    "https://github.com/nominex",
+    "https://defillama.com/protocol/nomiswap"
+  ]
+}
